@@ -1,2 +1,2 @@
-import"./assets/styles-DD3qoKza.js";console.log("Form");
+import"./assets/styles-XLEXItEH.js";let e={email:"",message:""};const a=document.querySelector(".feedback-form"),r="feedback-form-state",m=()=>{const t=localStorage.getItem(r);t&&(e=JSON.parse(t),Object.entries(e).forEach(([s,o])=>{a.elements[s]&&(a.elements[s].value=o)}))};m();a.addEventListener("input",t=>{const{name:l,value:s}=t.target;e[l]=s.trim(),localStorage.setItem(r).JSON.stringify(e)});a.addEventListener("submit",t=>{if(t.preventDefault(),e.email==""||e.message===""){alert("fill please all fields");return}console.log("Submitted Data:",e),localStorage.removeItem(r),e={email:"",message:""},a.reset()});
 //# sourceMappingURL=2-form.js.map
